@@ -1,0 +1,13 @@
+digraph{
+n0 [shape="Mrecord"; label=<{<font point-size="11">hybrid-services.intersocs</font>|<font point-size="8">Hybrid services (TCD)</font>}>];
+n1 [shape=Mrecord;label=<{<font point-size="11">irc.skynet.ie</font>|<font point-size="8">IRC:Intersocs:Skynet:flexo-vm05</font>}>];
+n2 [shape=Mrecord;label=<{<font point-size="11">irc.netsoc.dit.ie</font>|<font point-size="8">DIT NetSoc (netsoc.dit.ie) Intersocs node</font>}>];
+n3 [shape=Mrecord;label=<{<font point-size="11">irc.redbrick.dcu.ie</font>|<font point-size="8">Redbrick intersocs node</font>}>];
+n4 [shape=Mrecord;label=<{<font point-size="11">irc.netsoc.tcd.ie</font>|<font point-size="8">DUIS (matrix.netsoc.tcd.ie) Intersocs node</font>}>];
+n5 [shape=Mrecord;label=<{<font point-size="11">irc.it-netsoc.ie</font>|<font point-size="8">ITTD Intersocs node</font>}>];
+n3 -> n5 [dir=both];
+n3 -> n1 [dir=both];
+n4 -> n0 [dir=forward];
+n4 -> n3 [dir=both];
+n4 -> n2 [dir=both];
+}
